@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        LinkedList<Integer> list = new LinkedList<>();
 
-        Node neew = new Node();
+        Node<Integer> neew = new Node<>();
         neew.data = 6;
 
         list.addData(6);
@@ -14,9 +14,5 @@ public class Main {
         list.addData(56);
         //list.addNode(neew);
         list.infinit();
-
-
-
     }
-
 }
