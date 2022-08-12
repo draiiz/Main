@@ -1,10 +1,10 @@
-public class LinkedList {
-    private Node root;
+public class LinkedList<T> {
+    private Node<T> root;
 
-    public void addData( int data){
-        Node n= new Node();
+    public void addData(T data){
+        Node<T> n= new Node<>();
         n.data=data;
-        Node current = root;
+        Node<T> current = root;
         if(root==null){
             root=n;
         }
@@ -15,8 +15,8 @@ public class LinkedList {
             current.next= n;
         }
     }
-    public void addNode(Node a){
-        Node current = root;
+    public void addNode(Node<T> a){
+        Node<T> current = root;
         if(root==null){
             root=a;
         }
@@ -31,8 +31,8 @@ public class LinkedList {
         return root + " ";
     }
     public void infinit(){
-        Node n1 = new Node();
-        Node n2 = new Node();
+        Node<T> n1 = new Node<>();
+        Node<T> n2 = new Node<>();
         n1=root;
         n2=root.next;
         while(n2.next!=null){
@@ -50,7 +50,5 @@ public class LinkedList {
                 }
             }
         }
-
     }
-
 }
